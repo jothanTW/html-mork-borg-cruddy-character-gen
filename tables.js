@@ -24,8 +24,8 @@ let eqtable2 = [
   'Sharp needle',
   'Medicine chest ({{}} uses)',
   'Metal file and lockpicks',
-  'Bear trap(Presence D14 to Spot, d8 damage)',
-  'Bomb(sealed bottle, d10 damage)',
+  'Bear trap (Presence D14 to Spot, d8 damage)',
+  'Bomb (sealed bottle, d10 damage)',
   'A bottle of red poison ({{}} doses)',
   'Silver crucifix'
 ]
@@ -96,7 +96,7 @@ let traittable = [
   'Endlessly Aggravated',
   'Inferiority Complex',
   'Problems with Authority',
-  'Loud Mouth',
+  'Loud-Mouthed',
   'Cruel',
   'Egocentric',
   'Nihilistic',

@@ -214,7 +214,14 @@ function createCharacter(seed) {
       trStr = 'Extremely ' + trStr;
     }
   } else {
-    trStr += ' and ' + traittable[tr2];
+    let trStr2 = traittable[tr2];
+    if (tr2 == 1) {
+      trStr2 = 'with an ' + trStr2;
+    }
+    if (tr2 == 2) {
+      trStr2 = 'with ' + trStr2;
+    }
+    trStr += ' and ' + trStr2;
   }
 
   characterData.traitStr = trStr + '; ' + woundtable[cap(indexedData.wound, 20)] + '; ' + habittable[cap(indexedData.habit, 20)];
