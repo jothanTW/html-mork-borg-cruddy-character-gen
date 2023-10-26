@@ -140,7 +140,10 @@ function createCharacter(seed) {
   characterData.presence = abilitytable[cap(indexedData.pres1, 6) + cap(indexedData.pres2, 6) + cap(indexedData.pres3, 6) + 2];
   characterData.strength = abilitytable[cap(indexedData.stre1, 6) + cap(indexedData.stre2, 6) + cap(indexedData.stre3, 6) + 2];
   characterData.toughness = abilitytable[cap(indexedData.tuff1, 6) + cap(indexedData.tuff2, 6) + cap(indexedData.tuff3, 6) + 2];
-  characterData.hp = characterData.toughness + cap(indexedData.hp, 8);
+  characterData.hp = characterData.toughness + cap(indexedData.hp, 8) + 1;
+  if (characterData.hp < 1) {
+    characterData.hp = 1;
+  }
   let eq1 = cap(indexedData.eq1, 6) - 2;
   let eq2 = cap(indexedData.eq2, 12);
   let eq3 = cap(indexedData.eq3, 12);
