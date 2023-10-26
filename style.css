@@ -1,0 +1,32 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    empty-cells: show;
+}
+
+#main {
+    max-width: 500px;
+}
+
+.wide-row {
+    display: flex;
+    justify-content: space-between;
+    white-space:pre;
+}
+
+.statbar {
+    display: flex;
+    white-space:pre;
+}
+.statbar > div {
+    width: 50%;
+}
+
+#equipment > div, #scrolls > div {
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
+.split {
+    height: 1em;
+}

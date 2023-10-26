@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+  <script src="tables.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+  <div class="button-list">
+      ID: <input type="text" maxlength="8" id="idField" onInput="onInputHandler()">
+      <button id="characterButton" onClick="refresh(true)">Go To Character</button>
+      <button onClick="refresh(false)">Random Character</button>
+  </div>
+  <div id="main">
+    <div class="wide-row">
+      <div id="name"></div>
+      <div id="id"></div>
+    </div>
+    <div class="wide-row">
+      <div id="hp"></div>
+      <div id="omens"></div>
+    </div>
+    <div class="split"></div>
+    <div class="wide-row">
+      <div id="agility"></div>
+      <div id="presence"></div>
+    </div>
+    <div class="wide-row">
+      <div id="strength"></div>
+      <div id="toughness"></div>
+    </div>
+    <div class="split"></div>
+    <div id="equipment"></div>
+    <div id="scrolls"></div>
+    <div class="split"></div>
+    <div id="description"></div>
+    
+  </div>
+</body>
+</html>
