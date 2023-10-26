@@ -125,7 +125,6 @@ function createCharacter(seed) {
   } catch (e) {
     seed = getRandomId();
   }
-  console.log(seed);
 
   // make sure this one happens
   document.getElementById("idField").value = seed;
@@ -231,7 +230,6 @@ function createCharacter(seed) {
 }
 
 function applyCharacter() {
-  console.log(characterData);
   document.getElementById('name').textContent = characterData.name;
   document.getElementById('id').textContent = '#' + characterData.id;
   document.getElementById('hp').textContent = 'HP: ' + characterData.hp;
