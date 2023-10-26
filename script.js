@@ -56,7 +56,10 @@ const indices = {
   habit: 25,
   ex2: 26,
   ex3: 27,
-  ex4: 28
+  ex4: 28,
+  silver1: 29,
+  silver2: 30,
+  rations: 31,
 }
 
 let indexedData = {
@@ -88,7 +91,10 @@ let indexedData = {
   habit: 25,
   ex2: 26,
   ex3: 27,
-  ex4: 28
+  ex4: 28,
+  silver1: 29,
+  silver2: 30,
+  rations: 31,
 }
 
 let characterData = {
@@ -102,7 +108,9 @@ let characterData = {
   equipment: [],
   scrolls: [],
   omens: null,
-  traitStr: null
+  traitStr: null,
+  silver: null,
+  rations: null
 }
 
 
@@ -143,6 +151,12 @@ function createCharacter(seed) {
   if (characterData.hp < 1) {
     characterData.hp = 1;
   }
+
+  characterData.silver = 10 * (cap(indexedData.silver1, 6) + cap(indexedData.silver2, 6) + 2);
+  characterData.rations = cap(indexedData.rations, 4) + 1;
+
+  characterData.equipment.push(characterData.silver + ' Silver', characterData.rations + ' days worth of rations')
+
   let eq1 = cap(indexedData.eq1, 6) - 2;
   let eq2 = cap(indexedData.eq2, 12);
   let eq3 = cap(indexedData.eq3, 12);
